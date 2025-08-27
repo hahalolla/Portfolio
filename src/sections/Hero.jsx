@@ -4,9 +4,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Suspense } from 'react';
 import { motion } from 'motion/react';
 
-import HackerRoom from '../components/HackerRoom.jsx';
 import Desktop from '../components/Desktop.jsx';
-import Hawk from '../components/Hawk.jsx';
 import HeroCamera from '../components/HeroCamera.jsx';
 import CanvasLoader from '../components/CanvasLoader.jsx';
 import { calculateSizes } from '../constants/index.js';

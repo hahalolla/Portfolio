@@ -1,0 +1,180 @@
+import { useGLTF, useTexture, useCursor } from '@react-three/drei'
+import { useState } from 'react'
+
+const HackerRoom = ({onPartClick, ...props}) => {
+  const { nodes, materials } = useGLTF('/models/desktop.glb');
+
+  const monitortxt = useTexture('textures/desk/monitor.png');
+  const screenTxt = useTexture('textures/desk/screen.png');
+
+  const [hovered, setHovered] = useState(false)
+  useCursor(hovered)
+
+  const handleClick = (id) => (e) => {
+    e.stopPropagation()
+    onPartClick?.(id, e.object)     // bubble out to React app
+  }
+  const over = (e) => { e.stopPropagation(); setHovered(true) }
+  const out  = (e) => { e.stopPropagation(); setHovered(false) }
+
+  return (
+    <group {...props} dispose={null}>
+      <mesh geometry={nodes.pCube410_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube407_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube408_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube495_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube493_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube489_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube498_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube488_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube487_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube492_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube491_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube494_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube496_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube497_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube490_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube486_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube414_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube508_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube509_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube511_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube510_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube476_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube475_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube474_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube472_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube471_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube469_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube468_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube467_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube466_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube464_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube428_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube574_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube575_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube573_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube561_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube538_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube537_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube539_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube560_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube562_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube559_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube563_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube558_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube572_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube571_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube570_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube569_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube568_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube567_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube566_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube565_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube564_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube557_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube556_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube555_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube554_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube553_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube552_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube551_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube550_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube549_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube548_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube547_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube546_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube545_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube544_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube543_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube541_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube540_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube536_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube535_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube534_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube533_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube532_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube531_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube530_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube529_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube528_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube527_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube526_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube542_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube525_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube524_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube523_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube522_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube521_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube520_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube519_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube518_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube517_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube516_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube515_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube514_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube513_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube512_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube507_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube506_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube505_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube504_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube503_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube502_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube501_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube500_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube499_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.p_Teclado_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.p_luzNum_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.p_luzMayus_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.p_luz_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pTorus1_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh geometry={nodes.pCube326_Teclado_0.geometry} material={materials.Teclado} />
+      <mesh
+        geometry={nodes.p_Monitor_PlasticoBrillante_0.geometry}
+        material={materials.PlasticoBrillante}
+      />
+      <mesh
+        geometry={nodes.pCylinder1_PlasticoBrillante_0.geometry}
+        material={materials.PlasticoBrillante}
+      />
+      <mesh geometry={nodes.pCylinder8_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder12_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder13_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder10_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder11_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder18_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder17_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.extrudedSurface1_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCube479_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder9_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder16_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCube485_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCube484_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCube481_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCube478_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCube480_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCube482_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder2_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder6_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder14_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.pCylinder15_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.p_Enchufe_Cableado_0.geometry} material={materials.Cableado} />
+      <mesh geometry={nodes.p_Cuerpo_Escritorio_0.geometry} material={materials.Escritorio} />
+      <mesh geometry={nodes.polySurface2_Escritorio_0.geometry} material={materials.Escritorio} />
+      <mesh geometry={nodes.p_tablaMadera_Escritorio_0.geometry} material={materials.Escritorio} />
+      <mesh geometry={nodes.p_Estante_Escritorio_0.geometry} material={materials.Escritorio} />
+      <mesh geometry={nodes.p_Parlante_Escritorio_0.geometry} material={materials.Escritorio} />
+      <mesh
+        geometry={nodes.pCube286_PlasticoBrillante_0.geometry}
+        material={materials.PlasticoBrillante}
+        position={[19.958, 0, -0.753]}
+        rotation={[0, 0.447, 0]}
+      />
+    </group>
+  );
+}
+
+useGLTF.preload('/models/desktop.glb');
+
+export default HackerRoom;

@@ -62,34 +62,34 @@ export const workExperiences = [
 export const reviews = [
   {
     name: "Java",
-    img: "./assets/java.png",
+    img: "/assets/java.png",
   },
   {
     name: "JavaScript",
-    img: "./assets/javas2.png",
+    img: "/assets/javas2.png",
   },
   {
     name: "React",
-    img: "./assets/react.png",
+    img: "/assets/react.png",
   },
   {
     name: "Python",
-    img: "./assets/python.png",
+    img: "/assets/python.png",
   },
   {
     name: "C#",
-    img: "./assets/csharp.png",
+    img: "/assets/csharp.png",
   },
   {
     name: "C++",
-    img: "./assets/cplus.png",
+    img: "/assets/cplus.png",
   },
   {
     name: "HTML",
-    img: "./assets/html.png",
+    img: "/assets/html.png",
   },
   {
     name: "CSS",
-    img: "./assets/css.png",
+    img: "/assets/css.png",
   },
 ];

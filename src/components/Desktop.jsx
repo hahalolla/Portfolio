@@ -4,9 +4,6 @@ import { useState } from 'react'
 const HackerRoom = ({onPartClick, ...props}) => {
   const { nodes, materials } = useGLTF('/models/desktop.glb');
 
-  const monitortxt = useTexture('textures/desk/monitor.png');
-  const screenTxt = useTexture('textures/desk/screen.png');
-
   const [hovered, setHovered] = useState(false)
   useCursor(hovered)
 

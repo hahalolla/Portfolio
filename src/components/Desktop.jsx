@@ -2,7 +2,7 @@ import { useGLTF, useTexture, useCursor } from '@react-three/drei'
 import { useState } from 'react'
 
 const HackerRoom = ({onPartClick, ...props}) => {
-  const { nodes, materials } = useGLTF('/models/desktop.glb');
+  const { nodes, materials } = useGLTF('models/desktop.glb');
 
   const [hovered, setHovered] = useState(false)
   useCursor(hovered)
@@ -172,6 +172,6 @@ const HackerRoom = ({onPartClick, ...props}) => {
   );
 }
 
-useGLTF.preload('/models/desktop.glb');
+useGLTF.preload('models/desktop.glb');
 
 export default HackerRoom;

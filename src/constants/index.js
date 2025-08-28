@@ -39,7 +39,7 @@ export const workExperiences = [
     pos: 'Mobile App & API Services Developer',
     duration: '2023 - Present',
     title: "Collaborated with team on a C# and Java mobile app to optimize warehouse and production management by automating data entry processes, job dispatch, and inventory tracking.",
-    icon: '/assets/java.png',
+    icon: 'assets/java.png',
   },
   {
     id: 2,
@@ -47,7 +47,7 @@ export const workExperiences = [
     pos: 'ERP System Developer',
     duration: '2021 - 2023',
     title: "Deployed new features and spearheaded report customization for company's ERP system, effectively addressing client requirements and enhancing overall system functionality.",
-    icon: '/assets/system.png',
+    icon: 'assets/system.png',
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ export const workExperiences = [
     pos: 'AI Testing Model Developer (Intern)',
     duration: '2021 - 2021',
     title: "Developed and tested Robotic Process Automation (RPA) models using UI Vision to streamline and automate repetitive tasks, enhancing operational efficiency and accuracy.",
-    icon: '/assets/ai.png',
+    icon: 'assets/ai.png',
   },
 ];
 

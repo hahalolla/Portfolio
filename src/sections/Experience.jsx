@@ -42,7 +42,7 @@ const Experience = () => {
                                     <div className="flex flex-col h-full justify-start items-center py-2">
                                         <div className="work-content_logo">
                                             <Canvas style={{ width: '100%', height: '100%' }} >
-                                                <RotatingIcon src={item.icon} />
+                                                <RotatingIcon src={`${import.meta.env.BASE_URL}${item.icon}`} />
                                             </Canvas>
                                         </div>
 

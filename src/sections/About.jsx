@@ -74,7 +74,7 @@ const About = () => {
                         <div>
                             <p className="grid-headtext text-center">Resume</p>
                             <div className="copy-container" onClick={handleDownload}>
-                                <img src={hasDownload ? '/assets/tick.svg' : '/assets/copy.svg'} alt="download" />
+                                <img src={hasDownload ? `${import.meta.env.BASE_URL}assets/tick.svg` : `${import.meta.env.BASE_URL}assets/copy.svg`} alt="download" />
                                 <p className="lg:text-2xl md:text-xl grid-subtext text-gray_gradient text-white">Download</p>
                             </div>
                         </div>

@@ -1,8 +1,8 @@
 import { twMerge } from "tailwind-merge";
 import Marquee from "../components/Marquee";
-import { reviews } from "../constants";
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+import { skills } from "../constants";
+const firstRow = skills.slice(0, skills.length / 2);
+const secondRow = skills.slice(skills.length / 2);
 
 const ReviewCard = ({ img, name }) => {
     return (
@@ -17,7 +17,7 @@ const ReviewCard = ({ img, name }) => {
                     width="32"
                     height="32"
                     alt=""
-                    src={img}
+                    src={`${import.meta.env.BASE_URL}${img}`}
                 />
                 <figcaption className="text-sm font-medium text-white">
                     {name}

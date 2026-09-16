@@ -11,7 +11,7 @@ const FrameWorks = () => {
                 ))}
             </OrbitingCircles>
             <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-                {skills.reverse().map((skills, index) => (
+                {[...skills].reverse().map((skills, index) => (
                     <Icon key={index} src={`${import.meta.env.BASE_URL}${skills.img}`} />
                 ))}
             </OrbitingCircles>

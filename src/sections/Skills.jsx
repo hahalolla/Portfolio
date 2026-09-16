@@ -32,12 +32,12 @@ const Skills = () => {
         <div className="c-space my-20">
             <p className="head-text">Skills</p>
             <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
-                <Marquee pauseOnHover className="[--duration:20s]">
+                <Marquee pauseOnHover className="[--duration:90s]">
                     {firstRow.map((review) => (
                         <ReviewCard key={review.name} {...review} />
                     ))}
                 </Marquee>
-                <Marquee reverse pauseOnHover className="[--duration:20s]">
+                <Marquee reverse pauseOnHover className="[--duration:90s]">
                     {secondRow.map((review) => (
                         <ReviewCard key={review.name} {...review} />
                     ))}

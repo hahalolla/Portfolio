@@ -1,4 +1,4 @@
-import { useGLTF, useTexture, useCursor } from '@react-three/drei'
+import { useGLTF, useCursor } from '@react-three/drei'
 import { useState } from 'react'
 
 const HackerRoom = ({onPartClick, ...props}) => {
@@ -130,6 +130,9 @@ const HackerRoom = ({onPartClick, ...props}) => {
       <mesh
         geometry={nodes.p_Monitor_PlasticoBrillante_0.geometry}
         material={materials.PlasticoBrillante}
+        onClick={handleClick('screen')}
+        onPointerOver={over}
+        onPointerOut={out}
       />
       <mesh
         geometry={nodes.pCylinder1_PlasticoBrillante_0.geometry}

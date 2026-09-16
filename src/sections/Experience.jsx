@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Image as DreiImage } from '@react-three/drei'
 
@@ -25,8 +25,6 @@ const RotatingIcon = ({ src }) => {
 }
 
 const Experience = () => {
-    const [animationName, setAnimationName] = useState('idle');
-
     return (
         <section className="c-space my-20" id="experience">
             <div className="w-full">
@@ -37,7 +35,6 @@ const Experience = () => {
                             {workExperiences.map((item, index) => (
                                 <div
                                     key={index}
-                                    onPointerOut={() => setAnimationName('idle')}
                                     className="work-content_container group">
                                     <div className="flex flex-col h-full justify-start items-center py-2">
                                         <div className="work-content_logo">

@@ -49,7 +49,7 @@ const Hero = () => {
 
             <HeroCamera isMobile={isMobile}>
               <Desktop scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.2, Math.PI / 2, 0]}
-                onPartClick={(id, obj) => {
+                onPartClick={(id) => {
                   if (id === 'screen') {
                     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
                   }

@@ -57,10 +57,10 @@ body {
     }
   }
   .animate-marquee {
-    animation: marquee 50s linear infinite;
+    animation: marquee var(--duration) linear infinite;
   }
   .animate-marquee-vertical {
-    animation: marquee-vertical 50s linear infinite;
+    animation: marquee-vertical var(--duration) linear infinite;
   }
 
 

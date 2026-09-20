@@ -25,7 +25,7 @@ const About = () => {
                 <div className="col-span-1 xl:row-span-3">
                     <div className="grid-container">
                         <div>
-                            <p className="grid-headtext">Hi, I’m Russell Tan Hong Chin</p>
+                            <p className="grid-headtext">Hi, I’m Tan Hong Chin</p>
                             <p className="grid-subtext">
                                 With 2 years of experience, I have honed my skills in both frontend and backend dev, creating dynamic
                                 and responsive mobile application and API services.

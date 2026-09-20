@@ -49,7 +49,7 @@ const About = () => {
                     <div className="grid-container">
                         <div>
                             <p className="grid-headtext">I’m very flexible with time zone communications & locations</p>
-                            <p className="grid-subtext">I&apos;m based in Malaysia and open to relocation or remote work worldwide.</p>
+                            <p className="grid-subtext">Currently based in Singapore | Malaysian | Open to relocation & remote opportunities worldwide</p>
                         </div>
                     </div>
                 </div>
